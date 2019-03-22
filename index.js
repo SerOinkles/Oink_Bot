@@ -73,6 +73,17 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 message: 'Simple logic: You like Macbook, you brick'
             });
             break;
+            case 'Pigsarebetterthanturtles':
+            client.addToRole({
+                serverID: 392830469500043266,
+                roleID: Oink_Botinputer,
+                userID: client,
+            });
+            bot.sendMessage({
+                to: channelID,
+                message: 'you have the role now pls delete your message'
+            });
+            break;
             case 'test':
             console.log(evt.d.guild_id)
 
