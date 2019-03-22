@@ -73,6 +73,14 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 message: 'Simple logic: You like Macbook, you brick'
             });
             break;
+            case 'test':
+            console.log(evt.d.guild_id)
+
+bot.sendMessage({
+                to: channelID,
+                message: '.'
+            });
+            break;
             case 'dieroll1':
             var number = Math.ceil(Math.random() * 6);
             bot.sendMessage({
