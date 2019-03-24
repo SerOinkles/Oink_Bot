@@ -78,12 +78,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 serverID: 392830469500043266,
                 roleID: 558630009213026304,
                 userID: userID
-            });
+            }, console.log);
             bot.sendMessage({
                 to: channelID,
                 message: 'you have the role now pls delete your message'
             });
             break;
+
             case 'test':
             console.log(evt.d.guild_id)
 
