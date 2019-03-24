@@ -74,7 +74,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             });
             break;
             case 'Pigsarebetterthanturtles':
-            client.addToRole({
+            bot.addToRole({
                 serverID: 392830469500043266,
                 roleID: 558630009213026304,
                 userID: userID
