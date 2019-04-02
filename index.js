@@ -1,6 +1,13 @@
 var Discord = require('discord.io');
 var auth = require('./auth.json');
-Math.random()
+
+var LunchA = ['Mark has third lunch.','Nick has second lunch.','Isaac has third lunch','Vijay has first lunch.','Paul has first lunch.','Santiago has first lunch','Austin has second lunch.','Steven has first lunch.','John has third lunch.','Sabrina has second lunch.','Coleh has second lunch.','Eli has second lunch.','Charlie has first lunch','Jonah has first lunch','Vijay, Paul, Santiago, Steven, Charlie ,and Jonah all have first lunch.','Nick, Austin, Sabrina, Coleh ,and Eli all have second lunch.','Mark, Isaac ,and John all have third lunch.']
+var LunchB = []
+var LunchC = []
+var LunchD = []
+var LunchE = []
+var LunchF = []
+var LunchG = []
 // Initialize Discord Bot
 var bot = new Discord.Client({
    token: auth
@@ -12,14 +19,9 @@ bot.on('ready', function (evt) {
     console.log('Logged in as: ');
     console.log(bot.username + ' - (' + bot.id + ')');
     bot.setPresence({ status: 'idle', game: { name: 'with ;help' } });
-    var LunchA = ['Mark has third lunch.','Nick has second lunch.','Isaac has third lunch','Vijay has first lunch.','Paul has first lunch.','Santiago has first lunch','Austin has second lunch.','Steven has first lunch.','John has third lunch.','Sabrina has second lunch.','Coleh has second lunch.','Eli has second lunch.','Charlie has first lunch','Jonah has first lunch','Vijay, Paul, Santiago, Steven, Charlie ,and Jonah all have first lunch.','Nick, Austin, Sabrina, Coleh ,and Eli all have second lunch.','Mark, Isaac ,and John all have third lunch.']
-    var LunchB = []
-    var LunchC = []
-    var LunchD = []
-    var LunchE = []
-    var LunchF = []
-    var LunchG = []
+
 });
+console.log(LunchA[0]);
 bot.on('message', function (user, userID, channelID, message, evt) {
     // Our bot needs to know if it will execute a command
     // It will listen for messages that will start with `!`
@@ -87,97 +89,97 @@ bot.on('message', function (user, userID, channelID, message, evt) {
            })
            console.log(LunchA[0]);
            break;
-           case 'LunchA Nick':
+           case 'LunchA_Nick':
            bot.sendmessage({
                to: channelID,
                message: LunchA[1]
            })
            break;
-           case 'LunchA Isaac':
+           case 'LunchA_Isaac':
            bot.sendmessage({
                to: channelID,
                message: LunchA[2]
            })
            break;
-           case 'LunchA Vijay':
+           case 'LunchA_Vijay':
            bot.sendmessage({
                to: channelID,
                message: LunchA[3]
            })
            break;
-           case 'LunchA Paul':
+           case 'LunchA_Paul':
            bot.sendmessage({
                to: channelID,
                message: LunchA[4]
            })
            break;
-           case 'LunchA Santiago':
+           case 'LunchA_Santiago':
            bot.sendmessage({
                to: channelID,
                message: LunchA[5]
            })
            break;
-           case 'LunchA Austin':
+           case 'LunchA_Austin':
            bot.sendmessage({
                to: channelID,
                message: LunchA[6]
            })
            break;
-           case 'LunchA Steven':
+           case 'LunchA_Steven':
            bot.sendmessage({
                to: channelID,
                message: LunchA[7]
            })
            break;
-           case 'LunchA John':
+           case 'LunchA_John':
            bot.sendmessage({
                to: channelID,
                message: LunchA[8]
            })
            break;
-           case 'LunchA Sabrina':
+           case 'LunchA_Sabrina':
            bot.sendmessage({
                to: channelID,
                message: LunchA[9]
            })
            break;
-           case 'LunchA Coleh':
+           case 'LunchA_Coleh':
            bot.sendmessage({
                to: channelID,
                message: LunchA[10]
            })
            break;
-           case 'LunchA Eli':
+           case 'LunchA_Eli':
            bot.sendmessage({
                to: channelID,
                message: LunchA[11]
            })
            break;
-           case 'LunchA Charlie':
+           case 'LunchA_Charlie':
            bot.sendmessage({
                to: channelID,
                message: LunchA[12]
            })
            break;
-           case 'LunchA Jonah':
+           case 'LunchA_Jonah':
            bot.sendmessage({
                to: channelID,
                message: LunchA[13]
            })
            break;
-           case 'LunchA 1st':
+           case 'LunchA_1st':
            bot.sendmessage({
                to: channelID,
                message: LunchA[14]
            })
            break;
-           case 'LunchA 2nd':
+           case 'LunchA_2nd':
            bot.sendmessage({
                to: channelID,
                message: LunchA[15]
            })
            break;
-           case 'LunchA 3rd':
+           case 'LunchA_3rd':
            bot.sendmessage({
                to: channelID,
                message: LunchA[16]
