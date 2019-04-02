@@ -85,6 +85,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                to: channelID,
                message: LunchA[0]
            })
+           console.log(LunchA[0]);
            break;
            case 'LunchA Nick':
            bot.sendmessage({
