@@ -80,7 +80,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 message: 'Simple logic: You like Macbook, you brick'
             });
             break;
-           case 'LunchA Mark':
+           case 'LunchA_Mark':
            bot.sendmessage({
                to: channelID,
                message: LunchA[0]
