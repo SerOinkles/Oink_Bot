@@ -83,103 +83,103 @@ bot.on('message', function (user, userID, channelID, message, evt) {
            case 'LunchA Mark':
            bot.sendmessage({
                to: channelID,
-               message: LunchA[1]
+               message: LunchA[0]
            })
            break;
            case 'LunchA Nick':
            bot.sendmessage({
                to: channelID,
-               message: LunchA[2]
+               message: LunchA[1]
            })
            break;
            case 'LunchA Isaac':
            bot.sendmessage({
                to: channelID,
-               message: LunchA[3]
+               message: LunchA[2]
            })
            break;
            case 'LunchA Vijay':
            bot.sendmessage({
                to: channelID,
-               message: LunchA[4]
+               message: LunchA[3]
            })
            break;
            case 'LunchA Paul':
            bot.sendmessage({
                to: channelID,
-               message: LunchA[5]
+               message: LunchA[4]
            })
            break;
            case 'LunchA Santiago':
            bot.sendmessage({
                to: channelID,
-               message: LunchA[6]
+               message: LunchA[5]
            })
            break;
            case 'LunchA Austin':
            bot.sendmessage({
                to: channelID,
-               message: LunchA[7]
+               message: LunchA[6]
            })
            break;
            case 'LunchA Steven':
            bot.sendmessage({
                to: channelID,
-               message: LunchA[8]
+               message: LunchA[7]
            })
            break;
            case 'LunchA John':
            bot.sendmessage({
                to: channelID,
-               message: LunchA[9]
+               message: LunchA[8]
            })
            break;
            case 'LunchA Sabrina':
            bot.sendmessage({
                to: channelID,
-               message: LunchA[10]
+               message: LunchA[9]
            })
            break;
            case 'LunchA Coleh':
            bot.sendmessage({
                to: channelID,
-               message: LunchA[11]
+               message: LunchA[10]
            })
            break;
            case 'LunchA Eli':
            bot.sendmessage({
                to: channelID,
-               message: LunchA[12]
+               message: LunchA[11]
            })
            break;
            case 'LunchA Charlie':
            bot.sendmessage({
                to: channelID,
-               message: LunchA[13]
+               message: LunchA[12]
            })
            break;
            case 'LunchA Jonah':
            bot.sendmessage({
                to: channelID,
-               message: LunchA[14]
+               message: LunchA[13]
            })
            break;
            case 'LunchA 1st':
            bot.sendmessage({
                to: channelID,
-               message: LunchA[15]
+               message: LunchA[14]
            })
            break;
            case 'LunchA 2nd':
            bot.sendmessage({
                to: channelID,
-               message: LunchA[16]
+               message: LunchA[15]
            })
            break;
            case 'LunchA 3rd':
            bot.sendmessage({
                to: channelID,
-               message: LunchA[17]
+               message: LunchA[16]
            })
            break;
             case 'Pigsarebetterthanturtles':
