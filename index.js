@@ -12,6 +12,13 @@ bot.on('ready', function (evt) {
     console.log('Logged in as: ');
     console.log(bot.username + ' - (' + bot.id + ')');
     bot.setPresence({ status: 'idle', game: { name: 'with ;help' } });
+    var LunchA = ['Mark has third lunch.','Nick has second lunch.','Isaac has third lunch','Vijay has first lunch.','Paul has first lunch.','Santiago has first lunch','Austin has second lunch.','Steven has first lunch.','John has third lunch.','Sabrina has second lunch.','Coleh has second lunch.','Eli has second lunch.','Charlie has first lunch','Jonah has first lunch','Vijay, Paul, Santiago, Steven, Charlie ,and Jonah all have first lunch.','Nick, Austin, Sabrina, Coleh ,and Eli all have second lunch.','Mark, Isaac ,and John all have third lunch.']
+    var LunchB = []
+    var LunchC = []
+    var LunchD = []
+    var LunchE = []
+    var LunchF = []
+    var LunchG = []
 });
 bot.on('message', function (user, userID, channelID, message, evt) {
     // Our bot needs to know if it will execute a command
@@ -73,6 +80,108 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 message: 'Simple logic: You like Macbook, you brick'
             });
             break;
+           case 'LunchA Mark':
+           bot.sendmessage({
+               to: channelID,
+               message: LunchA[1]
+           })
+           break;
+           case 'LunchA Nick':
+           bot.sendmessage({
+               to: channelID,
+               message: LunchA[2]
+           })
+           break;
+           case 'LunchA Isaac':
+           bot.sendmessage({
+               to: channelID,
+               message: LunchA[3]
+           })
+           break;
+           case 'LunchA Vijay':
+           bot.sendmessage({
+               to: channelID,
+               message: LunchA[4]
+           })
+           break;
+           case 'LunchA Paul':
+           bot.sendmessage({
+               to: channelID,
+               message: LunchA[5]
+           })
+           break;
+           case 'LunchA Santiago':
+           bot.sendmessage({
+               to: channelID,
+               message: LunchA[6]
+           })
+           break;
+           case 'LunchA Austin':
+           bot.sendmessage({
+               to: channelID,
+               message: LunchA[7]
+           })
+           break;
+           case 'LunchA Steven':
+           bot.sendmessage({
+               to: channelID,
+               message: LunchA[8]
+           })
+           break;
+           case 'LunchA John':
+           bot.sendmessage({
+               to: channelID,
+               message: LunchA[9]
+           })
+           break;
+           case 'LunchA Sabrina':
+           bot.sendmessage({
+               to: channelID,
+               message: LunchA[10]
+           })
+           break;
+           case 'LunchA Coleh':
+           bot.sendmessage({
+               to: channelID,
+               message: LunchA[11]
+           })
+           break;
+           case 'LunchA Eli':
+           bot.sendmessage({
+               to: channelID,
+               message: LunchA[12]
+           })
+           break;
+           case 'LunchA Charlie':
+           bot.sendmessage({
+               to: channelID,
+               message: LunchA[13]
+           })
+           break;
+           case 'LunchA Jonah':
+           bot.sendmessage({
+               to: channelID,
+               message: LunchA[14]
+           })
+           break;
+           case 'LunchA 1st':
+           bot.sendmessage({
+               to: channelID,
+               message: LunchA[15]
+           })
+           break;
+           case 'LunchA 2nd':
+           bot.sendmessage({
+               to: channelID,
+               message: LunchA[16]
+           })
+           break;
+           case 'LunchA 3rd':
+           bot.sendmessage({
+               to: channelID,
+               message: LunchA[17]
+           })
+           break;
             case 'Pigsarebetterthanturtles':
             bot.addToRole({
                 serverID: "392830469500043266",
