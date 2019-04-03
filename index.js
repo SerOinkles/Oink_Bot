@@ -2,7 +2,7 @@ var Discord = require('discord.io');
 var auth = require('./auth.json');
 
 var LunchA = ['Mark has third lunch.','Nick has second lunch.','Isaac has third lunch','Vijay has first lunch.','Paul has first lunch.','Santiago has first lunch','Austin has second lunch.','Steven has first lunch.','John has third lunch.','Sabrina has second lunch.','Coleh has second lunch.','Eli has second lunch.','Charlie has first lunch','Jonah has first lunch','Vijay, Paul, Santiago, Steven, Charlie ,and Jonah all have first lunch.','Nick, Austin, Sabrina, Coleh ,and Eli all have second lunch.','Mark, Isaac ,and John all have third lunch.']
-var LunchB = []
+var LunchB = ['Mark has second lunch.','Nick has second lunch.','Isaac has null lunch.','Vijay has first lunch.','Paul has third lunch.','Santiago has third lunch.','Austin has third lunch.','Steven has second lunch.','John has first lunch.','Sabrina has first lunch.','Coleh has first lunch.','ELi has first lunch.','Charlie has second lunch.','Jonah has third lunch.','Vijay, Austin, John, Coleh, Sabrina ,and Eli all have first lunch.','Mark, Nick, Steven ,and Charlie all have second lunch.','Paul, Santiago ,and Jonah all have third lunch.']
 var LunchC = []
 var LunchD = []
 var LunchE = []
@@ -183,6 +183,109 @@ bot.on('message', function (user, userID, channelID, message, evt) {
            bot.sendMessage({
                to: channelID,
                message: LunchA[16]
+           })
+           break;
+           case 'LunchB_Mark':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchB[0]
+           })
+           console.log(LunchA[0]);
+           break;
+           case 'LunchB_Nick':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchB[1]
+           })
+           break;
+           case 'LunchB_Isaac':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchB[2]
+           })
+           break;
+           case 'LunchB_Vijay':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchB[3]
+           })
+           break;
+           case 'LunchB_Paul':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchB[4]
+           })
+           break;
+           case 'LunchB_Santiago':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchB[5]
+           })
+           break;
+           case 'LunchB_Austin':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchB[6]
+           })
+           break;
+           case 'LunchB_Steven':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchB[7]
+           })
+           break;
+           case 'LunchB_John':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchB[8]
+           })
+           break;
+           case 'LunchB_Sabrina':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchB[9]
+           })
+           break;
+           case 'LunchB_Coleh':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchB[10]
+           })
+           break;
+           case 'LunchB_Eli':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchB[11]
+           })
+           break;
+           case 'LunchB_Charlie':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchB[12]
+           })
+           break;
+           case 'LunchB_Jonah':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchB[13]
+           })
+           break;
+           case 'LunchB_1st':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchB[14]
+           })
+           break;
+           case 'LunchB_2nd':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchB[15]
+           })
+           break;
+           case 'LunchB_3rd':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchB[16]
            })
            break;
             case 'Pigsarebetterthanturtles':
