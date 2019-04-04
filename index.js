@@ -4,7 +4,7 @@ var auth = require('./auth.json');
 var LunchA = ['Mark has third lunch.','Nick has second lunch.','Isaac has third lunch','Vijay has first lunch.','Paul has first lunch.','Santiago has first lunch','Austin has second lunch.','Steven has first lunch.','John has third lunch.','Sabrina has second lunch.','Coleh has second lunch.','Eli has second lunch.','Charlie has first lunch.','Jonah has first lunch.','Vijay, Paul, Santiago, Steven, Charlie ,and Jonah all have first lunch.','Nick, Austin, Sabrina, Coleh ,and Eli all have second lunch.','Mark, Isaac ,and John all have third lunch.']
 var LunchB = ['Mark has second lunch.','Nick has second lunch.','Isaac has second lunch.','Vijay has first lunch.','Paul has third lunch.','Santiago has third lunch.','Austin has third lunch.','Steven has second lunch.','John has first lunch.','Sabrina has first lunch.','Coleh has first lunch.','ELi has first lunch.','Charlie has second lunch.','Jonah has third lunch.','Vijay, Austin, John, Coleh, Sabrina ,and Eli all have first lunch.','Mark, Nick, Steven ,and Charlie all have second lunch.','Paul, Santiago ,and Jonah all have third lunch.']
 var LunchC = ['Mark has second lunch.','Nick has third lunch.','Isaac has first lunch.','Vijay has first lunch.','Paul has third lunch.','Santiago has second lunch.','Austin has first lunch.','Steven has third lunch.','John has second lunch.','Sabrina has third lunch.','Coleh has third lunch.','Eli has third lunch.','Charlie has third lunch.','Jonah has first lunch.','Isaac, Vijay, Austin ,and Jonah all have first lunch.','Mark, Santiago ,and John all have second lunch.','Nick, Paul, Steven, Sabrina, Coleh, Eli ,and Charlie all have third lunch.']
-var LunchD = []
+var LunchD = ['Mark has first lunch.','Nick has first lunch.','Isaac has second lunch.','Vijay has second lunch.','Paul has first lunch.','Santiago has first lunch.','Austin has second lunch.','Steven has first lunch.','John has first lunch.','Sabrina has first lunch.','Coleh has first lunch.','Eli has first lunch.','Charlie has first lunch.','Jonah has third lunch.','Mark, Nick, Paul, Santiago, Steven, John, Sabrina, Coleh, Eli ,and Charlie all have first lunch.', 'Isaac, Vijay ,and Austin all have second lunch.','Only Jonah has third lunch. :(']
 var LunchE = []
 var LunchF = []
 var LunchG = []
@@ -392,7 +392,109 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                message: LunchC[16]
            })
            break;
-
+           case 'LunchD_Mark':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchD[0]
+           })
+           console.log(LunchA[0]);
+           break;
+           case 'LunchD_Nick':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchD[1]
+           })
+           break;
+           case 'LunchD_Isaac':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchD[2]
+           })
+           break;
+           case 'LunchD_Vijay':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchD[3]
+           })
+           break;
+           case 'LunchD_Paul':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchD[4]
+           })
+           break;
+           case 'LunchD_Santiago':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchD[5]
+           })
+           break;
+           case 'LunchD_Austin':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchD[6]
+           })
+           break;
+           case 'LunchD_Steven':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchD[7]
+           })
+           break;
+           case 'LunchD_John':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchD[8]
+           })
+           break;
+           case 'LunchD_Sabrina':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchD[9]
+           })
+           break;
+           case 'LunchD_Coleh':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchD[10]
+           })
+           break;
+           case 'LunchD_Eli':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchD[11]
+           })
+           break;
+           case 'LunchD_Charlie':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchD[12]
+           })
+           break;
+           case 'LunchD_Jonah':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchD[13]
+           })
+           break;
+           case 'LunchD_1st':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchD[14]
+           })
+           break;
+           case 'LunchD_2nd':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchD[15]
+           })
+           break;
+           case 'LunchD_3rd':
+           bot.sendMessage({
+               to: channelID,
+               message: LunchD[16]
+           })
+           break;
            //End of lunch generator
            //role creator
             case 'Pigsarebetterthanturtles':
