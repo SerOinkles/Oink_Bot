@@ -1,6 +1,6 @@
 var Discord = require('discord.io');
 var auth = require('./auth.json');
-
+// lunch arrays
 var LunchA = ['Mark has third lunch.','Nick has second lunch.','Isaac has third lunch','Vijay has first lunch.','Paul has first lunch.','Santiago has first lunch','Austin has second lunch.','Steven has first lunch.','John has third lunch.','Sabrina has second lunch.','Coleh has second lunch.','Eli has second lunch.','Charlie has first lunch.','Jonah has first lunch.','Vijay, Paul, Santiago, Steven, Charlie ,and Jonah all have first lunch.','Nick, Austin, Sabrina, Coleh ,and Eli all have second lunch.','Mark, Isaac ,and John all have third lunch.']
 var LunchB = ['Mark has second lunch.','Nick has second lunch.','Isaac has second lunch.','Vijay has first lunch.','Paul has third lunch.','Santiago has third lunch.','Austin has third lunch.','Steven has second lunch.','John has first lunch.','Sabrina has first lunch.','Coleh has first lunch.','ELi has first lunch.','Charlie has second lunch.','Jonah has third lunch.','Vijay, Austin, John, Coleh, Sabrina ,and Eli all have first lunch.','Mark, Nick, Steven ,and Charlie all have second lunch.','Paul, Santiago ,and Jonah all have third lunch.']
 var LunchC = ['Mark has second lunch.','Nick has third lunch.','Isaac has first lunch.','Vijay has first lunch.','Paul has third lunch.','Santiago has second lunch.','Austin has first lunch.','Steven has third lunch.','John has second lunch.','Sabrina has third lunch.','Coleh has third lunch.','Eli has third lunch.','Charlie has third lunch.','Jonah has first lunch.','Isaac, Vijay, Austin ,and Jonah all have first lunch.','Mark, Santiago ,and John all have second lunch.','Nick, Paul, Steven, Sabrina, Coleh, Eli ,and Charlie all have third lunch.']
@@ -15,6 +15,7 @@ var bot = new Discord.Client({
 });
 bot.connect();
 bot.on('ready', function (evt) {
+    //sets status to be idle and playing the game "with ;help"
     console.log('Connected');
     console.log('Logged in as: ');
     console.log(bot.username + ' - (' + bot.id + ')');
@@ -23,15 +24,14 @@ bot.on('ready', function (evt) {
 });
 console.log(LunchA[0]);
 bot.on('message', function (user, userID, channelID, message, evt) {
-    // Our bot needs to know if it will execute a command
-    // It will listen for messages that will start with `!`
+    // It will listen for messages that will start with `;`
     if (message.substring(0, 1) == ';') {
         var args = message.substring(1).split(' ');
         var cmd = args[0];
-       
+       //string jokes like ;oink
         args = args.splice(1);
         switch(cmd) {
-            // !ping
+            
             case 'oink':
                 bot.sendMessage({
                     to: channelID,
@@ -82,6 +82,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 message: 'Simple logic: You like Macbook, you brick'
             });
             break;
+            //generates people in each lunch and what lunch a person is in
            case 'LunchA_Mark':
            bot.sendMessage({
                to: channelID,
@@ -391,6 +392,9 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                message: LunchC[16]
            })
            break;
+
+           //End of lunch generator
+           //role creator
             case 'Pigsarebetterthanturtles':
             bot.addToRole({
                 serverID: "392830469500043266",
@@ -402,7 +406,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 message: 'you have the role now pls delete your message'
             });
             break;
-
+            //gets the server id
             case 'test':
             console.log(evt.d.guild_id)
 
@@ -411,6 +415,8 @@ bot.sendMessage({
                 message: '.'
             });
             break;
+            //random generators below
+            //die roller
             case 'dieroll1':
             var number = Math.ceil(Math.random() * 6);
             bot.sendMessage({
@@ -427,6 +433,7 @@ bot.sendMessage({
             });
             }
             break;
+            //Civ 5 drafter
             case 'd1':
             var civ = Math.ceil(Math.random() * 36);
             var civList = ['Venice (so unlucky)','American','Assyrian','Brazillian','Byzantine','Carthaginian','Celtic','Danish','Dutch','Ethiopian','French','German','Greek','Incan','Indian','Indonesian','Japanese','Mayan','Mongolian','Morrocan','Ottoman','Polynesian','Portuguese','Roman','Siamese','Songhai','Swedish','Zulu','Arabian','Austrian','Aztec','Chinese','Korean','Persian','Russian','Shoshone','Spanish',]
@@ -464,6 +471,7 @@ bot.sendMessage({
             break;
          }
      }
+     //sends someone a ":(" if they type "bacon" in a message
      bot.on('message', function(user, userID, channelID, message, event) {
         if (message === "bacon") {
             bot.sendMessage({
@@ -474,6 +482,7 @@ bot.sendMessage({
     });
         
 });
+//Explains why the bot crashed
 bot.on('disconnect', function (erMsg, code) {
     console.log('Bot disconnected from Discord with code ' + code + ' for reason: ' + erMsg);
 });
