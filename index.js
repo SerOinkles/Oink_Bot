@@ -880,7 +880,31 @@ bot.sendMessage({
             });
             }
             break;
-         }
+            //meme custom commands
+            case 'meme':
+            if(~(bot.servers['392830469500043266'].members[userID].roles.indexOf('558630009213026304'))) {
+            bot.sendMessage({
+                to: '387014509409075210',
+                message: "case " + "'" + args[0] + "'" + ": \n"
+                + "bot.sendMessage({ \n" + "to: channelID, \n" + 
+                "message: " + "'" + args[1] + "' \n"
+                 +  " }); \n" + 
+                 "break; \n"
+            });   
+            break;
+            }
+            else{
+               bot.sendMessage({ 
+                   to: channelID,
+                   message: 'you are not worthy'
+            });
+            }
+            break; 
+
+            //custom commands go here
+            
+        }
+           
      }
      //sends someone a ":(" if they type "bacon" in a message
      bot.on('message', function(user, userID, channelID, message, event) {
