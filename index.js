@@ -900,7 +900,21 @@ bot.sendMessage({
             });
             }
             break; 
-
+            case 'randomgen':
+            if(~(bot.servers['392830469500043266'].members[userID].roles.indexOf('558630009213026304'))) {
+            bot.sendMessage({
+                to: '387014509409075210',
+                message: "case " + "'" + args[0] + "' \n" + "var custom = Math.ceil(Math.random() * " + args[1] + "); \n" + "var customList = [' '," + args[2] + '] \n' + " bot.sendMessage({ \n" + 'to: channelID, \n' + ' message: customList[custom] \n' + '}); \n' + 'break;'
+            });   
+            break;
+            }
+            else{
+               bot.sendMessage({ 
+                   to: channelID,
+                   message: 'you are not worthy'
+            });
+            }
+            break; 
             //custom commands go here
             
         }
