@@ -1,13 +1,13 @@
 var Discord = require('discord.io');
 var auth = require('./auth.json');
 // lunch arrays
-var LunchA = ['Mark has third lunch.','Nick has second lunch.','Isaac has third lunch','Vijay has first lunch.','Paul has first lunch.','Santiago has first lunch','Austin has second lunch.','Steven has first lunch.','John has third lunch.','Sabrina has second lunch.','Coleh has second lunch.','Eli has second lunch.','Charlie has first lunch.','Jonah has first lunch.','Vijay, Paul, Santiago, Steven, Charlie ,and Jonah all have first lunch.','Nick, Austin, Sabrina, Coleh ,and Eli all have second lunch.','Mark, Isaac ,and John all have third lunch.']
-var LunchB = ['Mark has second lunch.','Nick has second lunch.','Isaac has second lunch.','Vijay has first lunch.','Paul has third lunch.','Santiago has third lunch.','Austin has third lunch.','Steven has second lunch.','John has first lunch.','Sabrina has first lunch.','Coleh has first lunch.','ELi has first lunch.','Charlie has second lunch.','Jonah has third lunch.','Vijay, Austin, John, Coleh, Sabrina ,and Eli all have first lunch.','Mark, Nick, Steven ,and Charlie all have second lunch.','Paul, Santiago ,and Jonah all have third lunch.']
-var LunchC = ['Mark has second lunch.','Nick has third lunch.','Isaac has first lunch.','Vijay has first lunch.','Paul has third lunch.','Santiago has second lunch.','Austin has first lunch.','Steven has third lunch.','John has second lunch.','Sabrina has third lunch.','Coleh has third lunch.','Eli has third lunch.','Charlie has third lunch.','Jonah has first lunch.','Isaac, Vijay, Austin ,and Jonah all have first lunch.','Mark, Santiago ,and John all have second lunch.','Nick, Paul, Steven, Sabrina, Coleh, Eli ,and Charlie all have third lunch.']
-var LunchD = ['Mark has first lunch.','Nick has first lunch.','Isaac has second lunch.','Vijay has second lunch.','Paul has first lunch.','Santiago has first lunch.','Austin has second lunch.','Steven has first lunch.','John has first lunch.','Sabrina has first lunch.','Coleh has first lunch.','Eli has first lunch.','Charlie has first lunch.','Jonah has third lunch.','Mark, Nick, Paul, Santiago, Steven, John, Sabrina, Coleh, Eli ,and Charlie all have first lunch.', 'Isaac, Vijay ,and Austin all have second lunch.','Only Jonah has third lunch. :(']
-var LunchE = ['Mark has second lunch.','Nick has first lunch.','Isaac has first lunch.','Vijay has second lunch.','Paul has second lunch.','Santiago has second lunch.','Austin has second lunch.','Steven has second lunch.','John has second lunch.','Sabrina has second lunch.','Coleh has second lunch.','Eli has second lunch.','Charlie has second lunch.','Jonah has second lunch.','Nick and Isaac have first lunch.','Mark, Vijay, Paul, Santiago, Austin, Steven, John, Sabrina, Coleh, Eli, Charlie ,and Jonah all have second lunch.','No one has thrid lunch.']
-var LunchF = ['Mark has third lunch.','Nick has second lunch.','Isaac has third lunch.','Vijay has third lunch.','Paul has first lunch.','Santiago has second lunch.','Austin has first lunch.','Steven has first lunch.','John has second lunch.','Sabrina has third lunch.','Coleh has second lunch.','Eli has second lunch.','Charlie has first lunch.','Jonah has second lunch.','Paul, Steven ,and Charlie all have first lunch.','Nick, Santiago, John, Coleh, Eli ,and Jonah all have second lunch.','Mark, Isaac, Vijay, Austin ,and Sabrina all have third lunch.']
-var LunchG = ['Mark has first lunch.','Nick has second lunch.','Isaac has second lunch.','Vijay has third lunch.','Paul has second lunch.','Santiago has first lunch.','Austin has first lunch.','Steven has second lunch.','John has first lunch.','Sabrina has first lunch.','Coleh has first lunch','Eli has third lunch.','Charli has second lunch.','Jonah has second lunch.','Mark, Santiago, Austin, John, Sabrina ,and Coleh all have first lunch.','Nick, Isaac, Paul, Steven, Charlie ,and Jonah all have second lunch.','Vijay and Eli have third lunch.']
+var lunchA = ['Mark has third lunch.','Nick has second lunch.','Isaac has third lunch','Vijay has first lunch.','Paul has first lunch.','Santiago has first lunch','Austin has second lunch.','Steven has first lunch.','John has third lunch.','Sabrina has second lunch.','Coleh has second lunch.','Eli has second lunch.','Charlie has first lunch.','Jonah has first lunch.','Vijay, Paul, Santiago, Steven, Charlie, and Jonah all have first lunch.','Nick, Austin, Sabrina, Coleh, and Eli all have second lunch.','Mark, Isaac, and John all have third lunch.']
+var lunchB = ['Mark has second lunch.','Nick has second lunch.','Isaac has second lunch.','Vijay has first lunch.','Paul has third lunch.','Santiago has third lunch.','Austin has third lunch.','Steven has second lunch.','John has first lunch.','Sabrina has first lunch.','Coleh has first lunch.','ELi has first lunch.','Charlie has second lunch.','Jonah has third lunch.','Vijay, Austin, John, Coleh, Sabrina, and Eli all have first lunch.','Mark, Nick, Steven, and Charlie all have second lunch.','Paul, Santiago, and Jonah all have third lunch.']
+var lunchC = ['Mark has second lunch.','Nick has third lunch.','Isaac has first lunch.','Vijay has first lunch.','Paul has third lunch.','Santiago has second lunch.','Austin has first lunch.','Steven has third lunch.','John has second lunch.','Sabrina has third lunch.','Coleh has third lunch.','Eli has third lunch.','Charlie has third lunch.','Jonah has first lunch.','Isaac, Vijay, Austin, and Jonah all have first lunch.','Mark, Santiago, and John all have second lunch.','Nick, Paul, Steven, Sabrina, Coleh, Eli, and Charlie all have third lunch.']
+var lunchD = ['Mark has first lunch.','Nick has first lunch.','Isaac has second lunch.','Vijay has second lunch.','Paul has first lunch.','Santiago has first lunch.','Austin has second lunch.','Steven has first lunch.','John has first lunch.','Sabrina has first lunch.','Coleh has first lunch.','Eli has first lunch.','Charlie has first lunch.','Jonah has third lunch.','Mark, Nick, Paul, Santiago, Steven, John, Sabrina, Coleh, Eli, and Charlie all have first lunch.', 'Isaac, Vijay, and Austin all have second lunch.','Only Jonah has third lunch. :(']
+var lunchE = ['Mark has second lunch.','Nick has first lunch.','Isaac has first lunch.','Vijay has second lunch.','Paul has second lunch.','Santiago has second lunch.','Austin has second lunch.','Steven has second lunch.','John has second lunch.','Sabrina has second lunch.','Coleh has second lunch.','Eli has second lunch.','Charlie has second lunch.','Jonah has second lunch.','Nick and Isaac have first lunch.','Mark, Vijay, Paul, Santiago, Austin, Steven, John, Sabrina, Coleh, Eli, Charlie, and Jonah all have second lunch.','No one has thrid lunch.']
+var lunchF = ['Mark has third lunch.','Nick has second lunch.','Isaac has third lunch.','Vijay has third lunch.','Paul has first lunch.','Santiago has second lunch.','Austin has first lunch.','Steven has first lunch.','John has second lunch.','Sabrina has third lunch.','Coleh has second lunch.','Eli has second lunch.','Charlie has first lunch.','Jonah has second lunch.','Paul, Steven, and Charlie all have first lunch.','Nick, Santiago, John, Coleh, Eli, and Jonah all have second lunch.','Mark, Isaac, Vijay, Austin, and Sabrina all have third lunch.']
+var lunchG = ['Mark has first lunch.','Nick has second lunch.','Isaac has second lunch.','Vijay has third lunch.','Paul has second lunch.','Santiago has first lunch.','Austin has first lunch.','Steven has second lunch.','John has first lunch.','Sabrina has first lunch.','Coleh has first lunch','Eli has third lunch.','Charli has second lunch.','Jonah has second lunch.','Mark, Santiago, Austin, John, Sabrina, and Coleh all have first lunch.','Nick, Isaac, Paul, Steven, Charlie, and Jonah all have second lunch.','Vijay and Eli have third lunch.']
 // Initialize Discord Bot
 var bot = new Discord.Client({
    token: auth
@@ -22,7 +22,7 @@ bot.on('ready', function (evt) {
     bot.setPresence({ status: 'idle', game: { name: 'with ;help' } });
 
 });
-console.log(LunchA[0]);
+console.log(lunchA[0]);
 bot.on('message', function (user, userID, channelID, message, evt) {
     // It will listen for messages that will start with `;`
     if (message.substring(0, 1) == ';') {
@@ -83,725 +83,725 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             });
             break;
             //generates people in each lunch and what lunch a person is in
-           case 'LunchA_Mark':
+           case 'lunchA_Mark':
            bot.sendMessage({
                to: channelID,
-               message: LunchA[0]
+               message: lunchA[0]
            })
-           console.log(LunchA[0]);
+           console.log(lunchA[0]);
            break;
-           case 'LunchA_Nick':
+           case 'lunchA_Nick':
            bot.sendMessage({
                to: channelID,
-               message: LunchA[1]
+               message: lunchA[1]
            })
            break;
-           case 'LunchA_Isaac':
+           case 'lunchA_Isaac':
            bot.sendMessage({
                to: channelID,
-               message: LunchA[2]
+               message: lunchA[2]
            })
            break;
-           case 'LunchA_Vijay':
+           case 'lunchA_Vijay':
            bot.sendMessage({
                to: channelID,
-               message: LunchA[3]
+               message: lunchA[3]
            })
            break;
-           case 'LunchA_Paul':
+           case 'lunchA_Paul':
            bot.sendMessage({
                to: channelID,
-               message: LunchA[4]
+               message: lunchA[4]
            })
            break;
-           case 'LunchA_Santiago':
+           case 'lunchA_Santiago':
            bot.sendMessage({
                to: channelID,
-               message: LunchA[5]
+               message: lunchA[5]
            })
            break;
-           case 'LunchA_Austin':
+           case 'lunchA_Austin':
            bot.sendMessage({
                to: channelID,
-               message: LunchA[6]
+               message: lunchA[6]
            })
            break;
-           case 'LunchA_Steven':
+           case 'lunchA_Steven':
            bot.sendMessage({
                to: channelID,
-               message: LunchA[7]
+               message: lunchA[7]
            })
            break;
-           case 'LunchA_John':
+           case 'lunchA_John':
            bot.sendMessage({
                to: channelID,
-               message: LunchA[8]
+               message: lunchA[8]
            })
            break;
-           case 'LunchA_Sabrina':
+           case 'lunchA_Sabrina':
            bot.sendMessage({
                to: channelID,
-               message: LunchA[9]
+               message: lunchA[9]
            })
            break;
-           case 'LunchA_Coleh':
+           case 'lunchA_Coleh':
            bot.sendMessage({
                to: channelID,
-               message: LunchA[10]
+               message: lunchA[10]
            })
            break;
-           case 'LunchA_Eli':
+           case 'lunchA_Eli':
            bot.sendMessage({
                to: channelID,
-               message: LunchA[11]
+               message: lunchA[11]
            })
            break;
-           case 'LunchA_Charlie':
+           case 'lunchA_Charlie':
            bot.sendMessage({
                to: channelID,
-               message: LunchA[12]
+               message: lunchA[12]
            })
            break;
-           case 'LunchA_Jonah':
+           case 'lunchA_Jonah':
            bot.sendMessage({
                to: channelID,
-               message: LunchA[13]
+               message: lunchA[13]
            })
            break;
-           case 'LunchA_1st':
+           case 'lunchA_1st':
            bot.sendMessage({
                to: channelID,
-               message: LunchA[14]
+               message: lunchA[14]
            })
            break;
-           case 'LunchA_2nd':
+           case 'lunchA_2nd':
            bot.sendMessage({
                to: channelID,
-               message: LunchA[15]
+               message: lunchA[15]
            })
            break;
-           case 'LunchA_3rd':
+           case 'lunchA_3rd':
            bot.sendMessage({
                to: channelID,
-               message: LunchA[16]
+               message: lunchA[16]
            })
            break;
-           case 'LunchB_Mark':
+           case 'lunchB_Mark':
            bot.sendMessage({
                to: channelID,
-               message: LunchB[0]
+               message: lunchB[0]
            })
-           console.log(LunchA[0]);
+           console.log(lunchA[0]);
            break;
-           case 'LunchB_Nick':
+           case 'lunchB_Nick':
            bot.sendMessage({
                to: channelID,
-               message: LunchB[1]
+               message: lunchB[1]
            })
            break;
-           case 'LunchB_Isaac':
+           case 'lunchB_Isaac':
            bot.sendMessage({
                to: channelID,
-               message: LunchB[2]
+               message: lunchB[2]
            })
            break;
-           case 'LunchB_Vijay':
+           case 'lunchB_Vijay':
            bot.sendMessage({
                to: channelID,
-               message: LunchB[3]
+               message: lunchB[3]
            })
            break;
-           case 'LunchB_Paul':
+           case 'lunchB_Paul':
            bot.sendMessage({
                to: channelID,
-               message: LunchB[4]
+               message: lunchB[4]
            })
            break;
-           case 'LunchB_Santiago':
+           case 'lunchB_Santiago':
            bot.sendMessage({
                to: channelID,
-               message: LunchB[5]
+               message: lunchB[5]
            })
            break;
-           case 'LunchB_Austin':
+           case 'lunchB_Austin':
            bot.sendMessage({
                to: channelID,
-               message: LunchB[6]
+               message: lunchB[6]
            })
            break;
-           case 'LunchB_Steven':
+           case 'lunchB_Steven':
            bot.sendMessage({
                to: channelID,
-               message: LunchB[7]
+               message: lunchB[7]
            })
            break;
-           case 'LunchB_John':
+           case 'lunchB_John':
            bot.sendMessage({
                to: channelID,
-               message: LunchB[8]
+               message: lunchB[8]
            })
            break;
-           case 'LunchB_Sabrina':
+           case 'lunchB_Sabrina':
            bot.sendMessage({
                to: channelID,
-               message: LunchB[9]
+               message: lunchB[9]
            })
            break;
-           case 'LunchB_Coleh':
+           case 'lunchB_Coleh':
            bot.sendMessage({
                to: channelID,
-               message: LunchB[10]
+               message: lunchB[10]
            })
            break;
-           case 'LunchB_Eli':
+           case 'lunchB_Eli':
            bot.sendMessage({
                to: channelID,
-               message: LunchB[11]
+               message: lunchB[11]
            })
            break;
-           case 'LunchB_Charlie':
+           case 'lunchB_Charlie':
            bot.sendMessage({
                to: channelID,
-               message: LunchB[12]
+               message: lunchB[12]
            })
            break;
-           case 'LunchB_Jonah':
+           case 'lunchB_Jonah':
            bot.sendMessage({
                to: channelID,
-               message: LunchB[13]
+               message: lunchB[13]
            })
            break;
-           case 'LunchB_1st':
+           case 'lunchB_1st':
            bot.sendMessage({
                to: channelID,
-               message: LunchB[14]
+               message: lunchB[14]
            })
            break;
-           case 'LunchB_2nd':
+           case 'lunchB_2nd':
            bot.sendMessage({
                to: channelID,
-               message: LunchB[15]
+               message: lunchB[15]
            })
            break;
-           case 'LunchB_3rd':
+           case 'lunchB_3rd':
            bot.sendMessage({
                to: channelID,
-               message: LunchB[16]
+               message: lunchB[16]
            })
            break;
-           case 'LunchC_Mark':
+           case 'lunchC_Mark':
            bot.sendMessage({
                to: channelID,
-               message: LunchC[0]
+               message: lunchC[0]
            })
-           console.log(LunchA[0]);
+           console.log(lunchA[0]);
            break;
-           case 'LunchC_Nick':
+           case 'lunchC_Nick':
            bot.sendMessage({
                to: channelID,
-               message: LunchC[1]
+               message: lunchC[1]
            })
            break;
-           case 'LunchC_Isaac':
+           case 'lunchC_Isaac':
            bot.sendMessage({
                to: channelID,
-               message: LunchC[2]
+               message: lunchC[2]
            })
            break;
-           case 'LunchC_Vijay':
+           case 'lunchC_Vijay':
            bot.sendMessage({
                to: channelID,
-               message: LunchC[3]
+               message: lunchC[3]
            })
            break;
-           case 'LunchC_Paul':
+           case 'lunchC_Paul':
            bot.sendMessage({
                to: channelID,
-               message: LunchC[4]
+               message: lunchC[4]
            })
            break;
-           case 'LunchC_Santiago':
+           case 'lunchC_Santiago':
            bot.sendMessage({
                to: channelID,
-               message: LunchC[5]
+               message: lunchC[5]
            })
            break;
-           case 'LunchC_Austin':
+           case 'lunchC_Austin':
            bot.sendMessage({
                to: channelID,
-               message: LunchC[6]
+               message: lunchC[6]
            })
            break;
-           case 'LunchC_Steven':
+           case 'lunchC_Steven':
            bot.sendMessage({
                to: channelID,
-               message: LunchC[7]
+               message: lunchC[7]
            })
            break;
-           case 'LunchC_John':
+           case 'lunchC_John':
            bot.sendMessage({
                to: channelID,
-               message: LunchC[8]
+               message: lunchC[8]
            })
            break;
-           case 'LunchC_Sabrina':
+           case 'lunchC_Sabrina':
            bot.sendMessage({
                to: channelID,
-               message: LunchC[9]
+               message: lunchC[9]
            })
            break;
-           case 'LunchC_Coleh':
+           case 'lunchC_Coleh':
            bot.sendMessage({
                to: channelID,
-               message: LunchC[10]
+               message: lunchC[10]
            })
            break;
-           case 'LunchC_Eli':
+           case 'lunchC_Eli':
            bot.sendMessage({
                to: channelID,
-               message: LunchC[11]
+               message: lunchC[11]
            })
            break;
-           case 'LunchC_Charlie':
+           case 'lunchC_Charlie':
            bot.sendMessage({
                to: channelID,
-               message: LunchC[12]
+               message: lunchC[12]
            })
            break;
-           case 'LunchC_Jonah':
+           case 'lunchC_Jonah':
            bot.sendMessage({
                to: channelID,
-               message: LunchC[13]
+               message: lunchC[13]
            })
            break;
-           case 'LunchC_1st':
+           case 'lunchC_1st':
            bot.sendMessage({
                to: channelID,
-               message: LunchC[14]
+               message: lunchC[14]
            })
            break;
-           case 'LunchC_2nd':
+           case 'lunchC_2nd':
            bot.sendMessage({
                to: channelID,
-               message: LunchC[15]
+               message: lunchC[15]
            })
            break;
-           case 'LunchC_3rd':
+           case 'lunchC_3rd':
            bot.sendMessage({
                to: channelID,
-               message: LunchC[16]
+               message: lunchC[16]
            })
            break;
-           case 'LunchD_Mark':
+           case 'lunchD_Mark':
            bot.sendMessage({
                to: channelID,
-               message: LunchD[0]
+               message: lunchD[0]
            })
-           console.log(LunchA[0]);
+           console.log(lunchA[0]);
            break;
-           case 'LunchD_Nick':
+           case 'lunchD_Nick':
            bot.sendMessage({
                to: channelID,
-               message: LunchD[1]
+               message: lunchD[1]
            })
            break;
-           case 'LunchD_Isaac':
+           case 'lunchD_Isaac':
            bot.sendMessage({
                to: channelID,
-               message: LunchD[2]
+               message: lunchD[2]
            })
            break;
-           case 'LunchD_Vijay':
+           case 'lunchD_Vijay':
            bot.sendMessage({
                to: channelID,
-               message: LunchD[3]
+               message: lunchD[3]
            })
            break;
-           case 'LunchD_Paul':
+           case 'lunchD_Paul':
            bot.sendMessage({
                to: channelID,
-               message: LunchD[4]
+               message: lunchD[4]
            })
            break;
-           case 'LunchD_Santiago':
+           case 'lunchD_Santiago':
            bot.sendMessage({
                to: channelID,
-               message: LunchD[5]
+               message: lunchD[5]
            })
            break;
-           case 'LunchD_Austin':
+           case 'lunchD_Austin':
            bot.sendMessage({
                to: channelID,
-               message: LunchD[6]
+               message: lunchD[6]
            })
            break;
-           case 'LunchD_Steven':
+           case 'lunchD_Steven':
            bot.sendMessage({
                to: channelID,
-               message: LunchD[7]
+               message: lunchD[7]
            })
            break;
-           case 'LunchD_John':
+           case 'lunchD_John':
            bot.sendMessage({
                to: channelID,
-               message: LunchD[8]
+               message: lunchD[8]
            })
            break;
-           case 'LunchD_Sabrina':
+           case 'lunchD_Sabrina':
            bot.sendMessage({
                to: channelID,
-               message: LunchD[9]
+               message: lunchD[9]
            })
            break;
-           case 'LunchD_Coleh':
+           case 'lunchD_Coleh':
            bot.sendMessage({
                to: channelID,
-               message: LunchD[10]
+               message: lunchD[10]
            })
            break;
-           case 'LunchD_Eli':
+           case 'lunchD_Eli':
            bot.sendMessage({
                to: channelID,
-               message: LunchD[11]
+               message: lunchD[11]
            })
            break;
-           case 'LunchD_Charlie':
+           case 'lunchD_Charlie':
            bot.sendMessage({
                to: channelID,
-               message: LunchD[12]
+               message: lunchD[12]
            })
            break;
-           case 'LunchD_Jonah':
+           case 'lunchD_Jonah':
            bot.sendMessage({
                to: channelID,
-               message: LunchD[13]
+               message: lunchD[13]
            })
            break;
-           case 'LunchD_1st':
+           case 'lunchD_1st':
            bot.sendMessage({
                to: channelID,
-               message: LunchD[14]
+               message: lunchD[14]
            })
            break;
-           case 'LunchD_2nd':
+           case 'lunchD_2nd':
            bot.sendMessage({
                to: channelID,
-               message: LunchD[15]
+               message: lunchD[15]
            })
            break;
-           case 'LunchD_3rd':
+           case 'lunchD_3rd':
            bot.sendMessage({
                to: channelID,
-               message: LunchD[16]
+               message: lunchD[16]
            })
            break;
-           case 'LunchE_Mark':
+           case 'lunchE_Mark':
            bot.sendMessage({
                to: channelID,
-               message: LunchE[0]
+               message: lunchE[0]
            })
-           console.log(LunchE[0]);
+           console.log(lunchE[0]);
            break;
-           case 'LunchE_Nick':
+           case 'lunchE_Nick':
            bot.sendMessage({
                to: channelID,
-               message: LunchE[1]
+               message: lunchE[1]
            })
            break;
-           case 'LunchE_Isaac':
+           case 'lunchE_Isaac':
            bot.sendMessage({
                to: channelID,
-               message: LunchE[2]
+               message: lunchE[2]
            })
            break;
-           case 'LunchE_Vijay':
+           case 'lunchE_Vijay':
            bot.sendMessage({
                to: channelID,
-               message: LunchE[3]
+               message: lunchE[3]
            })
            break;
-           case 'LunchE_Paul':
+           case 'lunchE_Paul':
            bot.sendMessage({
                to: channelID,
-               message: LunchE[4]
+               message: lunchE[4]
            })
            break;
-           case 'LunchE_Santiago':
+           case 'lunchE_Santiago':
            bot.sendMessage({
                to: channelID,
-               message: LunchE[5]
+               message: lunchE[5]
            })
            break;
-           case 'LunchE_Austin':
+           case 'lunchE_Austin':
            bot.sendMessage({
                to: channelID,
-               message: LunchE[6]
+               message: lunchE[6]
            })
            break;
-           case 'LunchE_Steven':
+           case 'lunchE_Steven':
            bot.sendMessage({
                to: channelID,
-               message: LunchE[7]
+               message: lunchE[7]
            })
            break;
-           case 'LunchE_John':
+           case 'lunchE_John':
            bot.sendMessage({
                to: channelID,
-               message: LunchE[8]
+               message: lunchE[8]
            })
            break;
-           case 'LunchE_Sabrina':
+           case 'lunchE_Sabrina':
            bot.sendMessage({
                to: channelID,
-               message: LunchE[9]
+               message: lunchE[9]
            })
            break;
-           case 'LunchE_Coleh':
+           case 'lunchE_Coleh':
            bot.sendMessage({
                to: channelID,
-               message: LunchE[10]
+               message: lunchE[10]
            })
            break;
-           case 'LunchE_Eli':
+           case 'lunchE_Eli':
            bot.sendMessage({
                to: channelID,
-               message: LunchE[11]
+               message: lunchE[11]
            })
            break;
-           case 'LunchE_Charlie':
+           case 'lunchE_Charlie':
            bot.sendMessage({
                to: channelID,
-               message: LunchE[12]
+               message: lunchE[12]
            })
            break;
-           case 'LunchE_Jonah':
+           case 'lunchE_Jonah':
            bot.sendMessage({
                to: channelID,
-               message: LunchE[13]
+               message: lunchE[13]
            })
            break;
-           case 'LunchE_1st':
+           case 'lunchE_1st':
            bot.sendMessage({
                to: channelID,
-               message: LunchE[14]
+               message: lunchE[14]
            })
            break;
-           case 'LunchE_2nd':
+           case 'lunchE_2nd':
            bot.sendMessage({
                to: channelID,
-               message: LunchE[15]
+               message: lunchE[15]
            })
            break;
-           case 'LunchE_3rd':
+           case 'lunchE_3rd':
            bot.sendMessage({
                to: channelID,
-               message: LunchE[16]
+               message: lunchE[16]
            })
            break;
-           case 'LunchF_Mark':
+           case 'lunchF_Mark':
            bot.sendMessage({
                to: channelID,
-               message: LunchF[0]
+               message: lunchF[0]
            })
-           console.log(LunchF[0]);
+           console.log(lunchF[0]);
            break;
-           case 'LunchF_Nick':
+           case 'lunchF_Nick':
            bot.sendMessage({
                to: channelID,
-               message: LunchF[1]
+               message: lunchF[1]
            })
            break;
-           case 'LunchF_Isaac':
+           case 'lunchF_Isaac':
            bot.sendMessage({
                to: channelID,
-               message: LunchF[2]
+               message: lunchF[2]
            })
            break;
-           case 'LunchF_Vijay':
+           case 'lunchF_Vijay':
            bot.sendMessage({
                to: channelID,
-               message: LunchF[3]
+               message: lunchF[3]
            })
            break;
-           case 'LunchF_Paul':
+           case 'lunchF_Paul':
            bot.sendMessage({
                to: channelID,
-               message: LunchF[4]
+               message: lunchF[4]
            })
            break;
-           case 'LunchF_Santiago':
+           case 'lunchF_Santiago':
            bot.sendMessage({
                to: channelID,
-               message: LunchF[5]
+               message: lunchF[5]
            })
            break;
-           case 'LunchF_Austin':
+           case 'lunchF_Austin':
            bot.sendMessage({
                to: channelID,
-               message: LunchF[6]
+               message: lunchF[6]
            })
            break;
-           case 'LunchF_Steven':
+           case 'lunchF_Steven':
            bot.sendMessage({
                to: channelID,
-               message: LunchF[7]
+               message: lunchF[7]
            })
            break;
-           case 'LunchF_John':
+           case 'lunchF_John':
            bot.sendMessage({
                to: channelID,
-               message: LunchF[8]
+               message: lunchF[8]
            })
            break;
-           case 'LunchF_Sabrina':
+           case 'lunchF_Sabrina':
            bot.sendMessage({
                to: channelID,
-               message: LunchF[9]
+               message: lunchF[9]
            })
            break;
-           case 'LunchF_Coleh':
+           case 'lunchF_Coleh':
            bot.sendMessage({
                to: channelID,
-               message: LunchF[10]
+               message: lunchF[10]
            })
            break;
-           case 'LunchF_Eli':
+           case 'lunchF_Eli':
            bot.sendMessage({
                to: channelID,
-               message: LunchF[11]
+               message: lunchF[11]
            })
            break;
-           case 'LunchF_Charlie':
+           case 'lunchF_Charlie':
            bot.sendMessage({
                to: channelID,
-               message: LunchF[12]
+               message: lunchF[12]
            })
            break;
-           case 'LunchF_Jonah':
+           case 'lunchF_Jonah':
            bot.sendMessage({
                to: channelID,
-               message: LunchF[13]
+               message: lunchF[13]
            })
            break;
-           case 'LunchF_1st':
+           case 'lunchF_1st':
            bot.sendMessage({
                to: channelID,
-               message: LunchF[14]
+               message: lunchF[14]
            })
            break;
-           case 'LunchF_2nd':
+           case 'lunchF_2nd':
            bot.sendMessage({
                to: channelID,
-               message: LunchF[15]
+               message: lunchF[15]
            })
            break;
-           case 'LunchF_3rd':
+           case 'lunchF_3rd':
            bot.sendMessage({
                to: channelID,
-               message: LunchF[16]
+               message: lunchF[16]
            })
            break;
-           case 'LunchG_Mark':
+           case 'lunchG_Mark':
            bot.sendMessage({
                to: channelID,
-               message: LunchG[0]
+               message: lunchG[0]
            })
-           console.log(LunchG[0]);
+           console.log(lunchG[0]);
            break;
-           case 'LunchG_Nick':
+           case 'lunchG_Nick':
            bot.sendMessage({
                to: channelID,
-               message: LunchG[1]
+               message: lunchG[1]
            })
            break;
-           case 'LunchG_Isaac':
+           case 'lunchG_Isaac':
            bot.sendMessage({
                to: channelID,
-               message: LunchG[2]
+               message: lunchG[2]
            })
            break;
-           case 'LunchG_Vijay':
+           case 'lunchG_Vijay':
            bot.sendMessage({
                to: channelID,
-               message: LunchG[3]
+               message: lunchG[3]
            })
            break;
-           case 'LunchG_Paul':
+           case 'lunchG_Paul':
            bot.sendMessage({
                to: channelID,
-               message: LunchG[4]
+               message: lunchG[4]
            })
            break;
-           case 'LunchG_Santiago':
+           case 'lunchG_Santiago':
            bot.sendMessage({
                to: channelID,
-               message: LunchG[5]
+               message: lunchG[5]
            })
            break;
-           case 'LunchG_Austin':
+           case 'lunchG_Austin':
            bot.sendMessage({
                to: channelID,
-               message: LunchG[6]
+               message: lunchG[6]
            })
            break;
-           case 'LunchG_Steven':
+           case 'lunchG_Steven':
            bot.sendMessage({
                to: channelID,
-               message: LunchG[7]
+               message: lunchG[7]
            })
            break;
-           case 'LunchG_John':
+           case 'lunchG_John':
            bot.sendMessage({
                to: channelID,
-               message: LunchG[8]
+               message: lunchG[8]
            })
            break;
-           case 'LunchG_Sabrina':
+           case 'lunchG_Sabrina':
            bot.sendMessage({
                to: channelID,
-               message: LunchG[9]
+               message: lunchG[9]
            })
            break;
-           case 'LunchG_Coleh':
+           case 'lunchG_Coleh':
            bot.sendMessage({
                to: channelID,
-               message: LunchG[10]
+               message: lunchG[10]
            })
            break;
-           case 'LunchG_Eli':
+           case 'lunchG_Eli':
            bot.sendMessage({
                to: channelID,
-               message: LunchG[11]
+               message: lunchG[11]
            })
            break;
-           case 'LunchG_Charlie':
+           case 'lunchG_Charlie':
            bot.sendMessage({
                to: channelID,
-               message: LunchG[12]
+               message: lunchG[12]
            })
            break;
-           case 'LunchG_Jonah':
+           case 'lunchG_Jonah':
            bot.sendMessage({
                to: channelID,
-               message: LunchG[13]
+               message: lunchG[13]
            })
            break;
-           case 'LunchG_1st':
+           case 'lunchG_1st':
            bot.sendMessage({
                to: channelID,
-               message: LunchG[14]
+               message: lunchG[14]
            })
            break;
-           case 'LunchG_2nd':
+           case 'lunchG_2nd':
            bot.sendMessage({
                to: channelID,
-               message: LunchG[15]
+               message: lunchG[15]
            })
            break;
-           case 'LunchG_3rd':
+           case 'lunchG_3rd':
            bot.sendMessage({
                to: channelID,
-               message: LunchG[16]
+               message: lunchG[16]
            })
            break;
            //End of lunch generator
