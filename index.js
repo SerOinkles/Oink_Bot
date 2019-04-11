@@ -22,7 +22,7 @@ bot.on('ready', function (evt) {
     var game = Math.ceil(Math.random() * 5);
             var gameList = [' ','with ;help','Space Minecraft','New Super Mario Brothers Wii', 'A game that does not require and HP Omen','with a brick']
             
-    bot.setPresence({ status: 'dnd', game: { name: gameLsit[game] } });
+    bot.setPresence({ status: 'do not disturb', game: { name: gameList[game] } });
 
 });
 console.log(lunchA[0]);
