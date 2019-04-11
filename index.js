@@ -19,7 +19,10 @@ bot.on('ready', function (evt) {
     console.log('Connected');
     console.log('Logged in as: ');
     console.log(bot.username + ' - (' + bot.id + ')');
-    bot.setPresence({ status: 'idle', game: { name: 'with ;help' } });
+    var game = Math.ceil(Math.random() * 5);
+            var gameList = [' ','with ;help','Space Minecraft','New Super Mario Brothers Wii', 'A game that does not require and HP Omen','with a brick']
+            
+    bot.setPresence({ status: 'dnd', game: { name: gameLsit[game] } });
 
 });
 console.log(lunchA[0]);
