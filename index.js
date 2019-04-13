@@ -932,7 +932,16 @@ bot.sendMessage({
             });
         }
     });
-        
+    bot.on('message', function(user, userID, channelID, message, event) {
+        if (message.includes("🆙  |  ")) {
+            bot.deleteMessage({
+                channelID: channelID,
+                  messageID: event.d.id
+
+            },console.log);
+        }
+    });
+
 });
 //Explains why the bot crashed
 bot.on('disconnect', function (erMsg, code) {
