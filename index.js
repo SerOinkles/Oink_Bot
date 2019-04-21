@@ -19,7 +19,7 @@ bot.on('ready', function (evt) {
     console.log('Connected');
     console.log('Logged in as: ');
     console.log(bot.username + ' - (' + bot.id + ')');
-    bot.setPresence({ status: 'dnd', game: '40 school days left!'});
+    bot.setPresence({ status: 'online', game: '40 school days left!'});
 
 });
 console.log(lunchA[0]);
