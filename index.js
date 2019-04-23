@@ -15,7 +15,7 @@ var bot = new Discord.Client({
 });
 bot.connect();
 bot.on('ready', function (evt) {
-    //sets status to be idle and playing the game "with ;help"
+    //sets status to be online and playing the game "with ;help"
     console.log('Connected');
     console.log('Logged in as: ');
     console.log(bot.username + ' - (' + bot.id + ')');
@@ -904,7 +904,7 @@ bot.sendMessage({
             if(~(bot.servers['392830469500043266'].members[userID].roles.indexOf('558630009213026304'))) {
             bot.sendMessage({
                 to: '387014509409075210',
-                message: "case " + "'" + args[0] + "' \n" + "var custom = Math.ceil(Math.random() * " + args[1] + "); \n" + "var customList = [' '," + args[2] + '] \n' + " bot.sendMessage({ \n" + 'to: channelID, \n' + ' message: customList[custom] \n' + '}); \n' + 'break;'
+                message: "case " + "'" + args[0] + "'" + ": \n" + "var custom = Math.ceil(Math.random() * " + args[1] + "); \n" + "var customList = [' '," + args[2] + '] \n' + " bot.sendMessage({ \n" + 'to: channelID, \n' + ' message: customList[custom] \n' + '}); \n' + 'break;'
             });   
             break;
             }
