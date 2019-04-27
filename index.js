@@ -19,7 +19,7 @@ bot.on('ready', function (evt) {
     console.log('Connected');
     console.log('Logged in as: ');
     console.log(bot.username + ' - (' + bot.id + ')');
-    bot.setPresence({ status: 'do not disturb', game: { name: '36 School Days Left!' } });
+    bot.setPresence({ status: 'do not disturb', game: { name: '35 School Days Left!' } });
 });
 console.log(lunchA[0]);
 bot.on('message', function (user, userID, channelID, message, evt) {
