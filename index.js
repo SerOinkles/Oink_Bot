@@ -22,6 +22,20 @@ bot.on('ready', function (evt) {
     bot.setPresence({ status: 'do not disturb', game: { name: '35 School Days Left!' } });
 });
 console.log(lunchA[0]);
+//daily announcement stuff
+setTimeout(function() {
+    bot.sendMessage({
+                       to: "485200425176268824",
+                       message: 'this is a test so pls ignore it'
+                   });
+               
+   }, 
+   
+   (new Date("april 29 2019")) 
+   .getTime()  
+   -
+   Date.now() 
+   ) 
 bot.on('message', function (user, userID, channelID, message, evt) {
     // It will listen for messages that will start with `;`
     if (message.substring(0, 1) == ';') {
