@@ -1418,7 +1418,12 @@ bot.sendMessage({
             }
             break; 
             //custom commands go here
-            
+            case 'superstars': 
+bot.sendMessage({ 
+to: channelID, 
+message: 'https://cdn.discordapp.com/emojis/562129093181702165.gif?v=1' 
+ }); 
+break;
         }
            
      }
