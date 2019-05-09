@@ -1328,6 +1328,13 @@ bot.sendMessage({
                 message: '.'
             });
             break;
+            //family stuff
+            case 'breakfast':
+            bot.sendMessage({
+                to: '387014509409075210',
+                message: args[0]
+            });   
+            break;
             //random generators below
             //die roller
             case 'dieroll1':
