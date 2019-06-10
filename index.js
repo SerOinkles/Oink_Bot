@@ -25,7 +25,7 @@ console.log(lunchA[0]);
 //daily announcement stuff
 setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'this is a test so pls ignore it'
                    });
                
@@ -39,7 +39,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is April 30 (only 34 school days left) and the rotation is FGABC. ' + lunchA[14] + " " + lunchA[15] + " " + lunchA[16]
                    });
                
@@ -53,7 +53,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is May 1st (only 33 school days left) and the rotation is DEFGA. ' + lunchF[14] + " " + lunchF[15] + " " + lunchF[16]
                    });
                
@@ -67,7 +67,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is May 2nd (only 32 school days left) and the rotation is BCDEF. ' + lunchD[14] + " " + lunchD[15] + " " + lunchD[16]
                    });
                
@@ -81,7 +81,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is May 3rd (only 31 school days left) and the rotation is GABCD. ' + lunchB[14] + " " + lunchB[15] + " " + lunchB[16] + " The NHS play is tonight at 7pm."
                    });
                
@@ -95,7 +95,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is May 6th (only 30 school days left) and the rotation is EFGAB. ' + lunchG[14] + " " + lunchG[15] + " " + lunchG[16]
                    });
                
@@ -109,7 +109,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is May 7th (only 29 school days left) and the rotation is CDEFG. ' + lunchE[14] + " " + lunchE[15] + " " + lunchE[16]
                    });
                
@@ -123,7 +123,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is May 8th (only 28 school days left) and the rotation is ABCDE. ' + lunchC[14] + " " + lunchC[15] + " " + lunchC[16]
                    });
                
@@ -137,7 +137,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is May 9th (only 27 school days left) and the rotation is FGABC. ' + lunchA[14] + " " + lunchA[15] + " " + lunchA[16] + " The NHS Chorus and Orchestra Concert is tonight at 7pm."
                    });
                
@@ -151,7 +151,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is May 10th (only 26 school days left) and the rotation is DEFGA. ' + lunchF[14] + " " + lunchF[15] + " " + lunchF[16]
                    });
                
@@ -165,7 +165,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is May 13th (only 25 school days left) and the rotation is BCDEF. ' + lunchD[14] + " " + lunchD[15] + " " + lunchD[16]
                    });
                
@@ -179,7 +179,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is May 14th (only 24 school days left) and the rotation is GABCD. ' + lunchB[14] + " " + lunchB[15] + " " + lunchB[16]
                    });
                
@@ -193,7 +193,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is May 15th (only 23 school days left) and the rotation is EFGAB. ' + lunchG[14] + " " + lunchG[15] + " " + lunchG[16] + " NHS Art Show Gala and Band Concert (Band Concert at 7pm)."
                    });
                
@@ -207,7 +207,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is May 16th (only 22 school days left) and the rotation is CDEFG. ' + lunchE[14] + " " + lunchE[15] + " " + lunchE[16]
                    });
                
@@ -221,7 +221,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is May 17th (only 21 school days left) and the rotation is ABCDE. ' + lunchC[14] + " " + lunchC[15] + " " + lunchC[16]
                    });
                
@@ -235,7 +235,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is May 20th (only 20 school days left) and the rotation is FGABC. ' + lunchA[14] + " " + lunchA[15] + " " + lunchA[16]
                    });
                
@@ -249,7 +249,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is May 21st (only 19 school days left) and the rotation is DEFGA. ' + lunchF[14] + " " + lunchF[15] + " " + lunchF[16]
                    });
                
@@ -263,7 +263,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is May 22nd (only 18 school days left) and the rotation is BCDEF. ' + lunchF[14] + " " + lunchF[15] + " " + lunchF[16] + " NHS Cabaret and Friends of Music Awards Dinner at 6pm."
                    });
                
@@ -277,7 +277,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is May 23rd (only 17 school days left) and the rotation is AEFG (Today is an ER day).'
                    });
                
@@ -291,7 +291,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is May 24th (only 16 school days left) and the rotation is GABCD. ' + lunchB[14] + " " + lunchB[15] + " " + lunchB[16]
                    });
                
@@ -305,7 +305,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is May 28th (only 15 school days left) and the rotation is EFGAB. ' + lunchG[14] + " " + lunchG[15] + " " + lunchG[16]
                    });
                
@@ -319,7 +319,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is May 29th (only 14 school days left) and the rotation is CDEFG. ' + lunchE[14] + " " + lunchE[15] + " " + lunchE[16]
                    });
                
@@ -333,7 +333,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is May 30th (only 13 school days left) and the rotation is ABCDE. ' + lunchC[14] + " " + lunchC[15] + " " + lunchC[16]
                    });
                
@@ -347,7 +347,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is May 31st (only 12 school days left) and the rotation is FGABC. ' + lunchA[14] + " " + lunchA[15] + " " + lunchA[16] + " Senior directed show tonight at 7pm."
                    });
                
@@ -361,7 +361,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is June 3rd (only 11 school days left) and the rotation is DEFGA. ' + lunchF[14] + " " + lunchF[15] + " " + lunchF[16] + " NHS chorus preformance at Graduation (5pm)."
                    });
                
@@ -375,7 +375,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is June 4th (only 10 school days left) and the rotation is BCDEF. ' + lunchD[14] + " " + lunchD[15] + " " + lunchD[16] + " 1st day of MCAS science."
                    });
                
@@ -389,7 +389,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is June 5th (only 9 school days left) and the rotation is GABCD. ' + lunchB[14] + " " + lunchB[15] + " " + lunchB[16] + " 2nd/last day of MCAS science."
                    });
                
@@ -403,7 +403,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is June 6th (only 8 school days left) and the rotation is EFGAB. ' + lunchG[14] + " " + lunchG[15] + " " + lunchG[16]
                    });
                
@@ -417,7 +417,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is June 7th (only 7 school days left) and the rotation is CDEFG. ' + lunchE[14] + " " + lunchE[15] + " " + lunchE[16]
                    });
                
@@ -431,7 +431,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is June 10th (only 6 school days left) and the rotation is ABCDE. ' + lunchC[14] + " " + lunchC[15] + " " + lunchC[16]
                    });
                
@@ -445,7 +445,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is June 11th (only 5 school days left) and the rotation is FGABC. ' + lunchA[14] + " " + lunchA[15] + " " + lunchA[16]
                    });
                
@@ -459,7 +459,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is June 12th (only 4 school days left) and the rotation is DEFGA. ' + lunchF[14] + " " + lunchF[15] + " " + lunchF[16] + " Wellness Students: Please clean out your P.E. lockers"
                    });
                
@@ -472,7 +472,7 @@ setTimeout(function() {
    ) 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is June 13th (only 3 school days left) and the rotation is BCDEF. ' + lunchD[14] + " " + lunchD[15] + " " + lunchD[16] + " Wellness Students: Please clean out your P.E. lockers"
                    });
                
@@ -486,7 +486,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is June 14th (only 2 school days left) and the rotation is GABCD. ' + lunchB[14] + " " + lunchB[15] + " " + lunchB[16] + " Wellness Students: Please clean out your P.E. lockers"
                    });
                
@@ -500,7 +500,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is June 17th (only 1 school day left) and the rotation is EFGAB. ' + lunchG[14] + " " + lunchG[15] + " " + lunchG[16] + " Wellness Students: Please clean out your P.E. lockers"
                    });
                
@@ -514,7 +514,7 @@ setTimeout(function() {
 
    setTimeout(function() {
     bot.sendMessage({
-                       to: "485200425176268824",
+                       to: "587745524757561381",
                        message: 'Today is June 18th (Last day required to come to school!) and the rotation is CDEFG. ' + lunchE[14] + " " + lunchE[15] + " " + lunchE[16] + " Wellness Students: Please clean out your P.E. lockers"
                    });
                
@@ -1452,7 +1452,6 @@ break;
             },console.log);
         }
     });
-
 });
 //Explains why the bot crashed
 bot.on('disconnect', function (erMsg, code) {
