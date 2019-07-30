@@ -525,6 +525,18 @@ setTimeout(function() {
    -
    Date.now() 
    ) 
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: 'Today is ...'
+   });
+    }, 
+   (new Date("Tues Sept 3 2019  00:00:00 GMT-0400 (Eastern Daylight Time)")) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+
 bot.on('message', function (user, userID, channelID, message, evt) {
     // It will listen for messages that will start with `;`
     if (message.substring(0, 1) == ';') {
@@ -587,7 +599,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             case 'school':
            bot.sendMessage({
                to: channelID,
-               message: "setTimeout(function() {\n" + " bot.sendMessage({\n" + " to: '587745524757561381',\n" + "message: 'Today is ...'\n" + "});\n" + " }, \n" + '(new Date("' + args[1] + " " + args[2] + " " + args[3] + " " + args[4] + "  00:00:00 GMT-0400 (Eastern Daylight Time)')) \n" + ".getTime()  \n" + "- \n" + "Date.now() \n" + ") "
+               message: "setTimeout(function() {\n" + " bot.sendMessage({\n" + " to: '587745524757561381',\n" + "message: 'Today is ...'\n" + "});\n" + " }, \n" + '(new Date("' + args[0] + " " + args[1] + " " + args[2] + " " + args[3] + "  00:00:00 GMT-0400 (Eastern Daylight Time)')) \n" + ".getTime()  \n" + "- \n" + "Date.now() \n" + ") "
            })
            break;
 
