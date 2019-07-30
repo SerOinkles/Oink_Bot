@@ -584,6 +584,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 message: 'Simple logic: You like Macbook, you brick'
             });
             break;
+            case 'school':
+           bot.sendMessage({
+               to: channelID,
+               message: "setTimeout(function() {\n" + " bot.sendMessage({\n" + " to: '587745524757561381',\n" + "message: 'Today is ...'\n" + "});\n" + " }, \n" + '(new Date("' + args[1] + " " + args[2] + " " + args[3] + " " + args[4] + "  00:00:00 GMT-0400 (Eastern Daylight Time)')) \n" + ".getTime()  \n" + "- \n" + "Date.now() \n" + ") "
+           })
+           break;
+
             //generates people in each lunch and what lunch a person is in
            case 'lunchA_Mark':
            bot.sendMessage({
