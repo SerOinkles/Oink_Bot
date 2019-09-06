@@ -23,515 +23,590 @@ bot.on('ready', function (evt) {
 });
 console.log(lunchA[0]);
 //daily announcement stuff
-setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'this is a test so pls ignore it'
-                   });
-               
-   }, 
-   
-   (new Date("Sun Apr 28 2019 20:33:36 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
 
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is April 30 (only 34 school days left) and the rotation is FGABC. ' + lunchA[14] + " " + lunchA[15] + " " + lunchA[16]
-                   });
-               
-   }, 
-   
-   (new Date("Tue Apr 30 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is May 1st (only 33 school days left) and the rotation is DEFGA. ' + lunchF[14] + " " + lunchF[15] + " " + lunchF[16]
-                   });
-               
-   }, 
-   
-   (new Date("Wed May 1 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is May 2nd (only 32 school days left) and the rotation is BCDEF. ' + lunchD[14] + " " + lunchD[15] + " " + lunchD[16]
-                   });
-               
-   }, 
-   
-   (new Date("Thu May 2 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is May 3rd (only 31 school days left) and the rotation is GABCD. ' + lunchB[14] + " " + lunchB[15] + " " + lunchB[16] + " The NHS play is tonight at 7pm."
-                   });
-               
-   }, 
-   
-   (new Date("Fri May 3 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is May 6th (only 30 school days left) and the rotation is EFGAB. ' + lunchG[14] + " " + lunchG[15] + " " + lunchG[16]
-                   });
-               
-   }, 
-   
-   (new Date("Mon May 6 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is May 7th (only 29 school days left) and the rotation is CDEFG. ' + lunchE[14] + " " + lunchE[15] + " " + lunchE[16]
-                   });
-               
-   }, 
-   
-   (new Date("Tue May 7 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is May 8th (only 28 school days left) and the rotation is ABCDE. ' + lunchC[14] + " " + lunchC[15] + " " + lunchC[16]
-                   });
-               
-   }, 
-   
-   (new Date("Wed May 8 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is May 9th (only 27 school days left) and the rotation is FGABC. ' + lunchA[14] + " " + lunchA[15] + " " + lunchA[16] + " The NHS Chorus and Orchestra Concert is tonight at 7pm."
-                   });
-               
-   }, 
-   
-   (new Date("Thu May 9 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is May 10th (only 26 school days left) and the rotation is DEFGA. ' + lunchF[14] + " " + lunchF[15] + " " + lunchF[16]
-                   });
-               
-   }, 
-   
-   (new Date("Fri May 10 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is May 13th (only 25 school days left) and the rotation is BCDEF. ' + lunchD[14] + " " + lunchD[15] + " " + lunchD[16]
-                   });
-               
-   }, 
-   
-   (new Date("Mon May 13 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is May 14th (only 24 school days left) and the rotation is GABCD. ' + lunchB[14] + " " + lunchB[15] + " " + lunchB[16]
-                   });
-               
-   }, 
-   
-   (new Date("Tue May 14 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is May 15th (only 23 school days left) and the rotation is EFGAB. ' + lunchG[14] + " " + lunchG[15] + " " + lunchG[16] + " NHS Art Show Gala and Band Concert (Band Concert at 7pm)."
-                   });
-               
-   }, 
-   
-   (new Date("Wed May 15 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is May 16th (only 22 school days left) and the rotation is CDEFG. ' + lunchE[14] + " " + lunchE[15] + " " + lunchE[16]
-                   });
-               
-   }, 
-   
-   (new Date("Thu May 16 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is May 17th (only 21 school days left) and the rotation is ABCDE. ' + lunchC[14] + " " + lunchC[15] + " " + lunchC[16]
-                   });
-               
-   }, 
-   
-   (new Date("Fri May 17 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is May 20th (only 20 school days left) and the rotation is FGABC. ' + lunchA[14] + " " + lunchA[15] + " " + lunchA[16]
-                   });
-               
-   }, 
-   
-   (new Date("Mon May 20 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is May 21st (only 19 school days left) and the rotation is DEFGA. ' + lunchF[14] + " " + lunchF[15] + " " + lunchF[16]
-                   });
-               
-   }, 
-   
-   (new Date("Tue May 21 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is May 22nd (only 18 school days left) and the rotation is BCDEF. ' + lunchF[14] + " " + lunchF[15] + " " + lunchF[16] + " NHS Cabaret and Friends of Music Awards Dinner at 6pm."
-                   });
-               
-   }, 
-   
-   (new Date("Wed May 22 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is May 23rd (only 17 school days left) and the rotation is AEFG (Today is an ER day).'
-                   });
-               
-   }, 
-   
-   (new Date("Thu May 23 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is May 24th (only 16 school days left) and the rotation is GABCD. ' + lunchB[14] + " " + lunchB[15] + " " + lunchB[16]
-                   });
-               
-   }, 
-   
-   (new Date("Fri May 24 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is May 28th (only 15 school days left) and the rotation is EFGAB. ' + lunchG[14] + " " + lunchG[15] + " " + lunchG[16]
-                   });
-               
-   }, 
-   
-   (new Date("Tue May 28 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is May 29th (only 14 school days left) and the rotation is CDEFG. ' + lunchE[14] + " " + lunchE[15] + " " + lunchE[16]
-                   });
-               
-   }, 
-   
-   (new Date("Wed May 29 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is May 30th (only 13 school days left) and the rotation is ABCDE. ' + lunchC[14] + " " + lunchC[15] + " " + lunchC[16]
-                   });
-               
-   }, 
-   
-   (new Date("Thu May 30 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is May 31st (only 12 school days left) and the rotation is FGABC. ' + lunchA[14] + " " + lunchA[15] + " " + lunchA[16] + " Senior directed show tonight at 7pm."
-                   });
-               
-   }, 
-   
-   (new Date("Fri May 31 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is June 3rd (only 11 school days left) and the rotation is DEFGA. ' + lunchF[14] + " " + lunchF[15] + " " + lunchF[16] + " NHS chorus preformance at Graduation (5pm)."
-                   });
-               
-   }, 
-   
-   (new Date("Mon June 3 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is June 4th (only 10 school days left) and the rotation is BCDEF. ' + lunchD[14] + " " + lunchD[15] + " " + lunchD[16] + " 1st day of MCAS science."
-                   });
-               
-   }, 
-   
-   (new Date("Tue June 4 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is June 5th (only 9 school days left) and the rotation is GABCD. ' + lunchB[14] + " " + lunchB[15] + " " + lunchB[16] + " 2nd/last day of MCAS science."
-                   });
-               
-   }, 
-   
-   (new Date("Wed June 5 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is June 6th (only 8 school days left) and the rotation is EFGAB. ' + lunchG[14] + " " + lunchG[15] + " " + lunchG[16]
-                   });
-               
-   }, 
-   
-   (new Date("Thu June 6 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is June 7th (only 7 school days left) and the rotation is CDEFG. ' + lunchE[14] + " " + lunchE[15] + " " + lunchE[16]
-                   });
-               
-   }, 
-   
-   (new Date("Fri June 7 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is June 10th (only 6 school days left) and the rotation is ABCDE. ' + lunchC[14] + " " + lunchC[15] + " " + lunchC[16]
-                   });
-               
-   }, 
-   
-   (new Date("Mon June 10 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is June 11th (only 5 school days left) and the rotation is FGABC. ' + lunchA[14] + " " + lunchA[15] + " " + lunchA[16]
-                   });
-               
-   }, 
-   
-   (new Date("Tue June 11 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is June 12th (only 4 school days left) and the rotation is DEFGA. ' + lunchF[14] + " " + lunchF[15] + " " + lunchF[16] + " Wellness Students: Please clean out your P.E. lockers"
-                   });
-               
-   }, 
-   
-   (new Date("Wed June 12 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is June 13th (only 3 school days left) and the rotation is BCDEF. ' + lunchD[14] + " " + lunchD[15] + " " + lunchD[16] + " Wellness Students: Please clean out your P.E. lockers"
-                   });
-               
-   }, 
-   
-   (new Date("Thu June 13 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is June 14th (only 2 school days left) and the rotation is GABCD. ' + lunchB[14] + " " + lunchB[15] + " " + lunchB[16] + " Wellness Students: Please clean out your P.E. lockers"
-                   });
-               
-   }, 
-   
-   (new Date("Fri June 14 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is June 17th (only 1 school day left) and the rotation is EFGAB. ' + lunchG[14] + " " + lunchG[15] + " " + lunchG[16] + " Wellness Students: Please clean out your P.E. lockers"
-                   });
-               
-   }, 
-   
-   (new Date("Mon June 17 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
-
-   setTimeout(function() {
-    bot.sendMessage({
-                       to: "587745524757561381",
-                       message: 'Today is June 18th (Last day required to come to school!) and the rotation is CDEFG. ' + lunchE[14] + " " + lunchE[15] + " " + lunchE[16] + " Wellness Students: Please clean out your P.E. lockers"
-                   });
-               
-   }, 
-   
-   (new Date("Tue June 18 2019 00:00:00 GMT-0400 (Eastern Daylight Time)")) 
-   .getTime()  
-   -
-   Date.now() 
-   ) 
    setTimeout(function() {
     bot.sendMessage({
     to: '587745524757561381',
-   message: 'Today is ...'
+   message: '180 Days Left of School'
    });
     }, 
-   (new Date("Tues Sept 3 2019  00:00:00 GMT-0400 (Eastern Daylight Time)")) 
+   (new Date('Tues Sept 3 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '179 Days Left of School'
+   });
+    }, 
+   (new Date('Wed Sept 4 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '178 Days Left of School'
+   });
+    }, 
+   (new Date('Thurs Sept 5 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '177 Days Left of School'
+   });
+    }, 
+   (new Date('Fri Sept 6 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '176 Days Left of School'
+   });
+    }, 
+   (new Date('Mon Sept 9 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '175 Days Left of School'
+   });
+    }, 
+   (new Date('Tues Sept 10 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '174 Days Left of School'
+   });
+    }, 
+   (new Date('Wed Sept 11 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '173 Days Left of School'
+   });
+    }, 
+   (new Date('Thurs Sept 12 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '172 Days Left of School'
+   });
+    }, 
+   (new Date('Fri Sept 13 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '171 Days Left of School'
+   });
+    }, 
+   (new Date('Mon Sept 16 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '170 Days Left of School'
+   });
+    }, 
+   (new Date('Wed Sept 18 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '169 Days Left of School'
+   });
+    }, 
+   (new Date('Thurs Sept 19 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '168 Days Left of School'
+   });
+    }, 
+   (new Date('Fri Sept 20 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '167 Days Left of School'
+   });
+    }, 
+   (new Date('Mon Sept 23 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '166 Days Left of School'
+   });
+    }, 
+   (new Date('Tues Sept 24 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '165 Days Left of School'
+   });
+    }, 
+   (new Date('Wed Sept 25 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '164 Days Left of School'
+   });
+    }, 
+   (new Date('Thurs Sept 26 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '163 Days Left of School'
+   });
+    }, 
+   (new Date('Fri Sept 27 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: 'No School Today (Happy Rosh Hashanah fellow jews)'
+   });
+    }, 
+   (new Date('Mon Sept 30 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '162 Days Left of School'
+   });
+    }, 
+   (new Date('Tues Oct 1 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '161 Days Left of School'
+   });
+    }, 
+   (new Date('Wed Oct 2 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '160 Days Left of School'
+   });
+    }, 
+   (new Date('Thurs Oct 3 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '159 Days Left of School'
+   });
+    }, 
+   (new Date('Fri Oct 4 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '158 Days Left of School'
+   });
+    }, 
+   (new Date('Mon Oct 7 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '157 Days Left of School'
+   });
+    }, 
+   (new Date('Tues Oct 8 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: 'No School (Happy Yom Kippur fellow jews)'
+   });
+    }, 
+   (new Date('Wed Oct 9 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '156 Days Left of School'
+   });
+    }, 
+   (new Date('Thurs Oct 10 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '155 Days Left of School'
+   });
+    }, 
+   (new Date('Fri Oct 11 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: 'No School (Did you know that Columbus was a horrible person?)'
+   });
+    }, 
+   (new Date('Mon Oct 14 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '154 Days Left of School'
+   });
+    }, 
+   (new Date('Tues Oct 15 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '153 Days Left of School'
+   });
+    }, 
+   (new Date('Wed Oct 16 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '152 Days Left of School'
+   });
+    }, 
+   (new Date('Thurs Oct 17 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '151 Days Left of School'
+   });
+    }, 
+   (new Date('Fri Oct 18 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '150 Days Left of School'
+   });
+    }, 
+   (new Date('Mon Oct 21 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '149 Days Left of School'
+   });
+    }, 
+   (new Date('Tues Oct 22 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '148 Days Left of School'
+   });
+    }, 
+   (new Date('Wed Oct 23 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '147 Days Left of School'
+   });
+    }, 
+   (new Date('Thurs Oct 24 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '146 Days Left of School'
+   });
+    }, 
+   (new Date('Fri Oct 25 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '145 Days Left of School (Mark gets his braces off today)'
+   });
+    }, 
+   (new Date('Mon Oct 28 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '144 Days Left of School'
+   });
+    }, 
+   (new Date('Tues Oct 29 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '143 Days Left of School'
+   });
+    }, 
+   (new Date('Wed Oct 30 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '142 Days Left of School (Happy Halloween)'
+   });
+    }, 
+   (new Date('Thurs Oct 31 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '141 Days Left of School'
+   });
+    }, 
+   (new Date('Fri Nov 1 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '140 Days Left of School'
+   });
+    }, 
+   (new Date('Mon Nov 4 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '139 Days Left of School'
+   });
+    }, 
+   (new Date('Tue Nov 5 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '138 Days Left of School'
+   });
+    }, 
+   (new Date('Wed Nov 6 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '137 Days Left of School'
+   });
+    }, 
+   (new Date('Thurs Nov 7 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: '136 Days Left of School'
+   });
+    }, 
+   (new Date('Fri Nov 8 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
+   .getTime()
+   - 
+   Date.now() 
+   )
+   
+   setTimeout(function() {
+    bot.sendMessage({
+    to: '587745524757561381',
+   message: 'No School (During the day of the WW1 armistice, more people died than in D-Day.'
+   });
+    }, 
+   (new Date('Mon Nov 11 2019  00:00:00 GMT-0400 (Eastern Daylight Time)')) 
    .getTime()
    - 
    Date.now() 
