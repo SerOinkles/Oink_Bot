@@ -1537,7 +1537,7 @@ break;
             });
         }
     });
-    var countingId = "632192195633348617";
+   /* var countingId = "632192195633348617";
 
     
         let numb = parseInt(evt.d.content);
@@ -1552,7 +1552,7 @@ break;
         if(evt.d.author.id == bot.id) return false;
     
         bot.sendMessage({to: evt.d.channel_id, message: numb+1});
-    
+    */
     bot.on('message', function(user, userID, channelID, message, event) {
         if (message.includes("🆙  |  ")) {
             bot.deleteMessage({
