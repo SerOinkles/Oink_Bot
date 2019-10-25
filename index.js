@@ -1537,6 +1537,22 @@ break;
             });
         }
     });
+    var countingId = "632192195633348617";
+
+    
+        let numb = parseInt(evt.d.content);
+    
+        //don't respond to non-numbers
+        if(isNaN(numb)) return false;
+    
+        //don't respond to messages out of the channel
+        if(evt.d.channel_id != countingId) return false;
+    
+        //don't respond to self
+        if(evt.d.author.id == bot.id) return false;
+    
+        bot.sendMessage({to: evt.d.channel_id, message: numb+1});
+    
     bot.on('message', function(user, userID, channelID, message, event) {
         if (message.includes("🆙  |  ")) {
             bot.deleteMessage({
