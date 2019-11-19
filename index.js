@@ -620,7 +620,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
        //string jokes like ;oink
         args = args.splice(1);
         switch(cmd) {
-            
+            case 'block': 
+            bot.sendMessage({ 
+                to: channelID, 
+                message: 'react' 
+                }); 
+                break;
             case 'oink':
                 bot.sendMessage({
                     to: channelID,
