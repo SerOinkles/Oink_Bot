@@ -623,7 +623,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             case 'block': 
                 bot.sendMessage({ 
                     to: channelID, 
-                    message: 'react' 
+                    message: 'react here' 
                 }); 
                 break;
             case 'oink':
