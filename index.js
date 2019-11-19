@@ -621,9 +621,9 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         args = args.splice(1);
         switch(cmd) {
             case 'block': 
-            bot.sendMessage({ 
-                to: channelID, 
-                message: 'react' 
+                bot.sendMessage({ 
+                    to: channelID, 
+                    message: 'react' 
                 }); 
                 break;
             case 'oink':
